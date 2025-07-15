@@ -1,46 +1,12 @@
-# new-def add(x, y):
-    return x + y
+🔧 What It Does:
+It performs basic arithmetic operations:
 
-def subtract(x, y):
-    return x - y
+Addition (+)
 
-def multiply(x, y):
-    return x * y
+Subtraction (-)
 
-def divide(x, y):
-    if y == 0:
-        return "Error: Cannot divide by zero!"
-    return x / y
+Multiplication (*)
 
-def calculator():
-    print("Simple Calculator")
-    print("------------------")
-    print("1. Add")
-    print("2. Subtract")
-    print("3. Multiply")
-    print("4. Divide")
+Division (/)
 
-    choice = input("Enter choice (1/2/3/4): ")
-
-    if choice not in ['1', '2', '3', '4']:
-        print("Invalid input. Try again.")
-        return
-
-    try:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-    except ValueError:
-        print("Invalid number entered!")
-        return
-
-    if choice == '1':
-        print("Result:", add(num1, num2))
-    elif choice == '2':
-        print("Result:", subtract(num1, num2))
-    elif choice == '3':
-        print("Result:", multiply(num1, num2))
-    elif choice == '4':
-        print("Result:", divide(num1, num2))
-
-if __name__ == "__main__":
-    calculator()
+The user selects an operation and provides two numbers, and the calculator returns the result.
